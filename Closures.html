@@ -1,0 +1,23 @@
+<html>
+   <body>
+      <h2>Closures Example</h2>
+      <script>
+	 // A closure is a function which has access to the variable from another function's scope. 
+         var num = 10;
+         function a() 
+		 {
+            var num = 15;
+            b(function() 
+			{
+               alert(num);
+            });
+         }
+         function b(c)
+		 {
+            var num = 30;
+            c();
+         }
+         a();
+      </script>
+   </body>
+</html>

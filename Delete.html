@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+  .align
+  {
+	text-align:center;
+   }
+</style>
+</head>
+<body>
+<h2 class="align">DELETE Method</h2>
+<script>
+fetch('https://jsonplaceholder.typicode.com/todos/1', {
+	method: 'DELETE'
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+</script>
+</body>
+</html>

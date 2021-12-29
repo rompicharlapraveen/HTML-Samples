@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Emp Details</title>
+    <style>
+        td
+        {
+            border: 1px solid tomato;
+            padding: 15px;
+        }
+
+        th
+        {
+            border: 1px solid orange;
+            padding: 15px;
+            color: white;
+            background-color:darkorange;
+            font-size:large;
+            font-weight:bold;
+        }
+
+        h1 
+        {
+            background-color: darkorange;
+            color:white;
+        }
+        .container
+        {
+            padding: 8px;
+            border-radius: 4px;
+            border: 2px solid red;
+            width: 400px;
+        }
+        button
+        {
+            background-color:OrangeRed;
+            color:white;
+            border:none;
+            border-radius:8px;
+            width:30%;
+			height:30px;
+        }
+    </style>
+    <script src="LocalStorage.js"></script>
+
+</head>
+<center>
+<body onload="init()" style="background-color:aliceblue;"> <!--The onload event is used to execute a JavaScript function immediately after a page has been loaded.-->
+        <form  action="" autocomplete="off">
+            <div class="container">
+                <center><h1>Employee Details</h1></center><hr />
+
+                <div>
+                    <label>
+                        Employee Id:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="eid" id="eid" placeholder="Enter Your Id" /><br /><br />
+                </div>
+                <div>
+                    <label>
+                        Employee Name:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="ename" id="ename" placeholder="Enter Your Name" /><br /><br />
+                </div>
+                <div>
+                    <label>
+                        Employee Age:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="eage" id="eage" placeholder="Enter Your Age" /><br /><br />
+                </div>
+                <div>
+                    <label>
+                        Employee Salary:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="text" name="esalary" id="esalary" placeholder="Enter Your Salary"><br /><br />
+                </div>
+                <div>
+                    <label>
+                        Employee Address:
+                    </label>
+                    &nbsp;
+                    <input type="text" name="eaddress" id="eaddress" placeholder="Enter Your Address" /><br /><br />
+                </div>
+				<center>
+					<button id="submit" onclick="add()">Register</button>
+					<button id="clear" onclick="clear()">Clear</button>
+				</center>
+                
+            </div>
+
+        </form>
+    <br />
+            <table style="border-collapse:collapse;" align="center" id="emptable" width="100%">
+                <thead>
+                    <tr>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Employee Age</th>
+                        <th>Employee Salary</th>
+                        <th>Employee Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tablerows"></tbody>
+            </table>
+</body>
+</center>
+</html>

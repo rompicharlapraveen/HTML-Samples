@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>
+  .align
+  {
+	text-align:center;
+   }
+</style>
+</head>
+<body>
+<h2 class="align">PATCH Method</h2>
+<script>
+fetch('https://jsonplaceholder.typicode.com/todos/1', {
+	method: 'PATCH',
+	headers: {'content-type':'application/json'},
+	body: JSON.stringify({
+		completed: true,
+		title: "We are going to learn PATCH method"
+	}),
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+</script>
+</body>
+</html>

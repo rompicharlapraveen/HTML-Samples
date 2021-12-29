@@ -1,0 +1,45 @@
+<html>
+<body>
+<center>
+<script>
+function diamond(size) 
+{
+  let col = size * 2 - 1;
+  for (let i = 1; i <= size; i++) 
+  {
+    let s = " ";
+    for (let j = 1; j <= col; j++)
+	{
+      if (j >= size + 1 - i && j <= size - 1 + i) 
+	  {
+        s += "*";
+      } else 
+	  {
+        s += " ";
+      }
+    }
+    document.write(s);
+	document.write("<br>");
+  }
+  for (let i = size - 1; i >= 1; i--) 
+  {
+    let s = " ";
+    for (let j = 1; j <= col; j++) 
+	{
+      if (j >= size + 1 - i && j <= size - 1 + i) 
+	  {
+        s += "*";
+      } else 
+	  {
+        s += " ";
+      }
+    }
+	document.write(s);
+	document.write("<br>");
+ }
+}
+diamond(10);
+</script>
+</center>
+</body>
+</html>

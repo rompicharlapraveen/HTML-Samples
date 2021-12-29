@@ -1,0 +1,31 @@
+<html>
+<body style="text-align:center;">
+<div>GrandParent
+<div >Parent
+<div>Child1</div>
+<div>Child2
+<div>Sub Child</div>
+</div>
+</div>
+</div>
+</br>
+<button onclick="myFunction()">Click Here</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function myFunction()
+{
+	var a= document.getElementsByTagName("div");
+	document.getElementById("demo1").innerHTML = a[0].innerHTML;
+	
+	var b= document.getElementsByTagName("div");
+	document.getElementById("demo2").innerHTML = b[1].innerHTML;
+	
+	var c= document.getElementsByTagName("div");
+	document.getElementById("demo3").innerHTML = c[3].innerHTML;
+	
+}
+</script>
+</body>
+</html>

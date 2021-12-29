@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>reg</title>
+    <style>
+        .roundtable
+        {
+            background: rgba(255,0,255,0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center><h2><font color="blue">Registration Form</font></h2></center>
+    <form action="" method="POST" autocomplete="off">
+        <center>
+            <table class="roundtable" width="500px" height="400px">
+                <tr>
+                    <td><b>First Name:</b><font color="red">*</font></td>
+                    <td>&nbsp;<input type="text" name="fname" placeholder="Enter First Name" required /></td>
+                </tr>
+                <tr>
+                    <td><b>Last Name:</b><font color="red">*</font></td>
+                    <td>&nbsp;<input type="text" name="lname" placeholder="Enter Last Name" required /></td>
+                </tr>
+                <tr>
+                    <td><b>Gender:</b><font color="red">*</font></td>
+                    <td>
+                        &nbsp;<input type="radio" name="gender1" value="male" /><b>Male</b>
+                        <input type="radio" name="gender2" value="female" /><b>Female</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Age:</b><font color="red">*</font></td>
+                    <td>&nbsp;<input type="number" name="age" placeholder="Enter your Age" required /></td>
+                </tr>
+                <tr>
+                    <td><b>Select Course:</b><font color="red">*</font></td>
+                    <td>
+                        &nbsp;
+                        <select>
+                            <option selected>---Choose Your Option---</option>
+                            <option>C-Sharp</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Department:</b><font color="red">*</font></td>
+                    <td>
+                        &nbsp;
+                        <input list="dept">
+                        <datalist id="dept">
+                            <option>BTech</option>
+                            <option>Degree</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b><font color="red">*</font></td>
+                    <td>&nbsp;<textarea name="address" placeholder="Enter your Address" rows="4" cols="25" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><b>Mobile:</b><font color="red">*</font></td>
+                    <td>
+                        &nbsp;<input type="text" name="mobile" placeholder="Enter Mobile Number" pattern="[6-9]{1}[0-9]{9}" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email Id:</b><font color="red">*</font></td>
+                    <td>&nbsp;<input type="email" name="email" placeholder="Enter Email Id" required /></td>
+                </tr>
+                <tr>
+                    <td><b>Password:</b><font color="red">*</font></td>
+                    <td>&nbsp;<input type="password" name="pssw" placeholder="Enter Password" required /></td>
+                </tr>
+                <tr>
+                    <td><b>Confirm Password:</b><font color="red">*</font></td>
+                    <td>
+                        &nbsp;<input type="password" name="cpssw" placeholder="Enter Confirm Password"  required/>
+                        <!--<input type="password" name="confirmpassword" placeholder="Enter Confirm Password" required />-->
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><input type="submit" value="Submit"></td>
+                    <td><button type="reset" />Reset</td>
+                    <td><a style="text-decoration:none;" href="Login1.html"><input type="button" value="Cancel" /></a></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+</html>

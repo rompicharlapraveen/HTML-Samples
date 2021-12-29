@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="array"></p>
+    <script>
+       var arr = [{Eid: 122, Ename: "Praveen"}, {Eid: 123, Ename: "Sasi"}, {Eid: 124, Ename: "Madhu"}];
+	   arr.forEach(function(ele,i,array) 
+	   {
+           document.write(array[i].Eid +" "+ array[i].Ename + "</br>");
+		// document.write(ele.Eid+" "+ ele.Ename+"</br>");
+       });
+      // document.getElementById("array").innerHTML = JSON.stringify(arr);
+    </script>
+  </body>
+</html>

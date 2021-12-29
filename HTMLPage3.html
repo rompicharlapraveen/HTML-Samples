@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TableCol&Row</title>
+    <style>
+        th, td {
+            border: 1px solid tomato;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>Row Span</h3>
+        <table style="border-collapse:collapse;" width="30%">
+            <tr><th>Name</th><td>Praveen</td></tr>
+            <tr><th rowspan="2">Mobile No.</th><td>7503520801</td></tr>
+            <tr><td>9555879135</td></tr>
+        </table><br><br>
+                    <h3>Column Span</h3>
+                    <table style="border-collapse:collapse;" width="30%">
+                        <tr>
+                            <th>Name</th>
+                            <th colspan="2">Mobile No.</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <tt><input type="text" name="name" /></tt>
+                            </td>
+                            <td>7503520801</td>
+                            <td>9555879135</td>
+                        </tr>
+                    </table>
+    </center>
+</body>
+</html>

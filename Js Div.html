@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+function myFunction()
+{
+	items = document.getElementsByClassName("single_item");
+
+	for (i = 0; i < items.length; i++) 
+	{
+		alert("The name property is " + items[i].getAttribute("name"));
+	}
+}
+</script>
+<div class="container">
+    <div name="FirstName" class="single_item"></div>
+    <div name="MiddleName" class="single_item"></div>
+    <div name="LastName" class="single_item"></div>
+    <div name="Age" class="single_item"></div>
+</div>
+<center><button onclick="myFunction()">Click</button></center>
+</body>
+</html>

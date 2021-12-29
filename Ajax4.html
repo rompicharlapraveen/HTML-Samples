@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+const request = new XMLHttpRequest();
+const url = "https://jsonplaceholder.typicode.com/posts";
+request.open("POST", url);
+request.setRequestHeader("Content-Type", "application/json");
+const post = {"userId": 1, "title":"Post Title", "body": "post Body"};
+request.onload = function()
+{
+	if(this.status >= 200 && this.status < 300)
+	{
+		const posts = JSON.parse(this.responseText);
+		console.log(posts);
+	}
+	else if(this.status === 404)
+	{
+		alert("The url was not Found");
+	}
+	else
+	{
+		alert("Unknown error occured");
+	}
+};
+request.send(JSON.stringify(post));
+</script>
+</body>
+</html>

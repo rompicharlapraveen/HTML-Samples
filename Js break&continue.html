@@ -1,0 +1,18 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let text = '';
+for(let i=0;i<10;i++)
+{
+	if(i==3)
+	{
+		// break;
+		continue;
+	}
+	text+="The value is:" + i + "<br>" ;
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>

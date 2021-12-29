@@ -1,0 +1,24 @@
+Most common http methods:
+
+1. GET : The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+2. POST : A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+3. PUT : PUT is used to send data to a server to create/update a resource. Replaces all the current representations of the target resource with the uploaded content.
+
+4. PATCH : PATCH is used to update partial resources. For instance, when you only need to update one field of the resource, PUTting a complete resource representation might be cumbersome and utilizes more bandwidth.
+
+5. HEAD : HEAD is almost identical to GET, but without the response body. HEAD transfers the status line and the header section only.
+
+6. DELETE : The DELETE method deletes the specified resource.
+
+7. OPTIONS : The OPTIONS method describes the communication options for the target resource.
+
+
+
+
+
+
+
+GET API
+https://documenter.getpostman.com/view/8854915/Szf7znEe#64142a26-a16b-43f9-9303-ff8b13d9d3ee

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<!--
+	<h3>JavaScript Arithmatic Operators</h3>
+	<p>x = 5, y = 10, z;</p>
+	<p id="p1">x+y=</p>
+	<p id="p2">y-x=</p>
+	<p id="p3">x*y=</p>
+	<p id="p4">y/x=</p>
+	<p id="p5">x%2=</p>
+	
+	<script>
+		var x = 5, y = 10;
+		
+		var z = x + y
+		document.getElementById("p1").innerHTML += z;
+
+		z = y - x;
+		document.getElementById("p2").innerHTML += z;
+
+		z = x * y;
+		document.getElementById("p3").innerHTML += z;
+
+		z = y / x;
+		document.getElementById("p4").innerHTML += z;
+
+		z = x % 2;
+		document.getElementById("p5").innerHTML += z;
+    </script>
+	-->
+	
+	<!--
+	<h3>JavaScript Comparison operators</h3>
+	<p>
+		var a = 5, b = 10, c = "5", x = a;
+	</p>
+
+	<p id="p1">a == c returns </p>
+	<p id="p2">a === c returns </p>
+	<p id="p3">a == x returns </p>
+	<p id="p4">a != b returns </p>
+	<p id="p5">a > b returns </p>
+	<p id="p6">a < b returns </p>
+	<p id="p7">a >= b returns </p>
+	<p id="p8">a <= b returns </p>
+	
+	<script>
+		var a = 5, b = 10, c = "5", x = a;
+
+		document.getElementById("p1").innerHTML += a == c; // return true
+
+		document.getElementById("p2").innerHTML += a === c; // return false
+
+		document.getElementById("p3").innerHTML += a == x;
+
+		document.getElementById("p4").innerHTML += a != b;
+
+		document.getElementById("p5").innerHTML += a > b;
+
+		document.getElementById("p6").innerHTML += a < b;
+
+		document.getElementById("p7").innerHTML += a >= b;
+
+		document.getElementById("p8").innerHTML += a <= b;
+    </script>
+	-->
+	
+	<!--
+	<h3>JavaScript Logical Operators</h3>
+	
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+
+	<script>
+		var a = 5, b = 10;
+
+		document.getElementById("p1").innerHTML = (a != b) && (a < b); 
+
+		document.getElementById("p2").innerHTML = (a > b) || (a == b);
+
+		document.getElementById("p3").innerHTML = (a < b) || (a == b);
+
+		document.getElementById("p4").innerHTML = !(a < b);
+
+		document.getElementById("p5").innerHTML = !(a > b);
+
+    </script>
+	-->
+	
+	<!--
+	<h2>JavaScript Assignment Operators</h2>
+	
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	
+	<script>
+		var x = 5, y = 10;
+
+		x = y;
+		document.getElementById("p1").innerHTML = x;
+
+		x += 1;
+		document.getElementById("p2").innerHTML = x;
+
+		x -= 1;
+		document.getElementById("p3").innerHTML = x;
+
+		x *= 5;
+		document.getElementById("p4").innerHTML = x;
+
+		x /= 5;
+		document.getElementById("p5").innerHTML = x;
+
+		x %= 2;
+		document.getElementById("p6").innerHTML = x;
+
+    </script>
+	-->
+	
+	<h1>JavaScript Ternary Operators</h1>
+	
+	<p id="p1"></p>
+	<p id="p2"></p>
+	
+	<script>
+		var a = 10, b = 5;
+
+		var c = a > b? a : b; 
+		var d = a > b? b : a; 
+
+		document.getElementById("p1").innerHTML = c;
+
+		document.getElementById("p2").innerHTML = d;
+
+    </script>
+</center>
+</body>
+</html>

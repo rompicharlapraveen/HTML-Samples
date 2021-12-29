@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+function Player(firstName, lastName, team, position) 
+{
+  this.firstName = firstName;  
+  this.lastName = lastName;
+  this.team = team;
+  this.position = position;
+}
+var player1 = new Player("Rompicharla", "Praveen", "India", "Forward");
+Player.prototype.sport = "Playing";
+alert(player1.lastName + " was good at " + player1.sport);
+</script>
+</body>
+</html>

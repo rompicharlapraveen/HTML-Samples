@@ -1,0 +1,44 @@
+<!-- https://stackoverflow.com/questions/44352423/javascript-display-name-of-div -->
+
+// https://www.geeksforgeeks.org/set-the-value-of-an-input-field-in-javascript/?ref=lbp
+
+<html>
+<body style="text-align:center;">
+	<div class="parent"> This is Parent Div
+		<div class="child child1" id="child"> This is Child1 Div </div>
+		<div class="child child2" id="child"> This is Child2 Div</div>
+	</div>
+	<br/>
+	<button onclick="Parent()"> Click </button>
+	<p id="Parent" style="font-size: 20px; font-weight: bold; color: green;"></p>
+	<script>
+	var down = document.getElementById('Parent');
+
+	function Parent() 
+	{
+		child = document.getElementById('child');
+		children = child.querySelector('.parent');
+		down.innerHTML = "Direct Child Nodes is - '" + children[0].innerHTML + "'";
+	}
+	</script>
+</body>
+</html>
+
+
+
+<html>
+<body>
+<div id="Master">
+<div id="myLI">Child1</div>
+<div id="myLI">Child2</div>
+</div>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLI").parentNode.nodeName;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>

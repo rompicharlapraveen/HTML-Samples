@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Input Types</title>
+    <style>
+        .form-box
+        {
+            padding: 8px;
+            border-radius: 4px;
+            border: 2px solid red;
+            width: 400px;
+        }
+    </style>
+</head>
+<body style="background-color:bisque;">
+    <center><h1><font color="green">Input Types</font></h1></center><hr />
+        <form action="" method="post">
+            <center>
+                <div class="form-box">
+                    <label><b>First Name:</b></label>
+                    <div>
+
+                        <input type="text" name="fname" placeholder="Enter Your First Name" autocomplete="off" autofocus required /><br /><br />
+                    </div>
+                    <label><b>Middle Name:</b></label>
+                    <div>
+
+                        <input type="text" name="mname" placeholder="Enter Your Middle Name" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Last Name:</b></label>
+                    <div>
+
+                        <input type="text" name="lname" placeholder="Enter Your Last Name" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Gender:</b></label>
+                    <div>
+
+                        <input type="radio" name="gender1"/>Male
+                        <input type="radio" name="gender2" />Female<br /><br />
+                    </div>
+                    <label><b>Age:</b></label>
+                    <div>
+
+                        <input type="number" name="age" placeholder="Enter Your Age" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Date of Birth:</b></label>
+                    <div>
+
+                        <input type="date" name="date" placeholder="Enter Your Middle Name" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Time:</b></label>
+                    <div>
+
+                        <input type="time" name="time" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Month:</b></label>
+                    <div>
+
+                        <input type="month" name="mname" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Week:</b></label>
+                    <div>
+
+                        <input type="week" name="week" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Email:</b></label>
+                    <div>
+
+                        <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off" required /><br /><br />
+                    </div>
+                    <label><b>Password:</b></label>
+                    <div>
+
+                        <input type="password" name="password" placeholder="Enter Your Password" autocomplete="off" maxlength="8" required/><br /><br />
+                    </div>
+                    <label><b>File:</b></label>
+                    <div>
+
+                        &nbsp;&nbsp;&nbsp;<input type="file" name="file" required multiple /><br /><br />
+                    </div>
+                    <label><b>Courses:</b></label>
+                    <div>
+
+                        <input type="checkbox" name="fname" />C-Sharp
+                        <input type="checkbox" name="fname" />Python
+                        <input type="checkbox" name="fname" />.Net
+                        <input type="checkbox" name="fname" />Java<br /><br />
+                    </div>
+                    <label><b>Color:</b></label>
+                    <div>
+
+                        <input type="color" name="color" value="green" /><br /><br />
+                    </div>
+                    <label><b>Search:</b></label>
+                    <div>
+
+                        <input type="text" name="search" autocomplete="off" required /><input type="button" value="Search" /><br /><br />
+                    </div>
+                    <label><b>DateTime-Local:</b></label>
+                    <div>
+
+                        <input type="datetime-local" name="datetime" /><br /><br />
+                    </div>
+                    <label><b>Hidden:</b></label>
+                    <div>
+
+                        <input type="hidden" name="hidden" value="9999" /><input type="text" name="name" autocomplete="off"/><br /><br />
+                    </div>
+                    <label><b>Url:</b></label>
+                    <div>
+
+                        <input type="url" name="url" /><input type="button" value="Submit" /><br /><br />
+                    </div>
+                    <label><b>Range:</b></label>
+                    <div>
+
+                        <input type="range" name="range" /><br /><br />
+                    </div>
+                    <label><b>Tel Number:</b></label>
+                    <div>
+
+                        <input type="tel" name="tel" placeholder="Enter Your Mobile Number" /><br /><br />
+                    </div>
+                    <div>
+                        <center>
+                            &nbsp;<input type="button" value="Register" />
+                            &nbsp;<input type="reset" value="Reset" />
+                            &nbsp;<input type="submit" value="Submit" />
+                        </center>
+                    </div>
+                </div>
+            </center>
+        </form>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+		<script>
+			function myFunction()
+			{
+				var c = document.body.childNodes;
+				var txt = "";
+				var i;
+				for (i = 0; i < c.length; i++) 
+				{
+					txt = txt + c[i].nodeName + "<br>";
+				}
+
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script>
+</body>
+</html>
