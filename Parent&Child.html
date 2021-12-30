@@ -29,3 +29,24 @@ function myFunction()
 </script>
 </body>
 </html>
+
+
+
+<html>
+<body style="text-align:center;">
+<div class='1'>GrandParent
+<div class='2'>Parent
+<div class='3'>Child 1</div>
+</div>
+<div class='2'>child 2</div>
+</div>
+</br>
+<button onclick="myFunction()">Click Here</button>
+<script>
+function myFunction()
+{
+   	document.querySelectorAll('.1 > *');
+}
+</script>
+</body>
+</html>
