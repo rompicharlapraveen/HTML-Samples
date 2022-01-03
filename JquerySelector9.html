@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery :input Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+           // $(":input").css('background-color', 'yellow');
+           // $(":text").css('background-color', 'yellow');
+           // $(":password").css('background-color', 'yellow');
+           // $(":radio").wrap("<span></span>").parent().css("background-color", "yellow");
+           // $(":checkbox").wrap("<span></span>").parent().css("background-color", "yellow");
+           // $(":button").css('background-color', 'yellow');
+          //  $(":reset").css('background-color', 'yellow');
+          //  $(":submit").css('background-color', 'yellow');
+          //  $(":imgage");
+          //  $(":file").css('background-color', 'yellow');
+          //  $(":enabled").css('background-color', 'yellow');
+          //  $(":disabled").css('background-color', 'yellow');
+          //  $(":selected").css('background-color', 'yellow');
+            $(":checked").wrap("<span></span>").parent().css("background-color", "yellow");
+        });
+    </script>
+</head>
+<body style="text-align:center;">
+    <h1>Form Elements Selector</h1>
+    <form autocomplete="off">
+        Name: <input type="text" name="name" /><br /><br />
+        Password: <input type="password" name="password" /><br /><br />
+
+        <div>
+            <input type="radio" name="gender" value="male" checked /> Male<br />
+            <input type="radio" name="gender" value="female" /> Female<br />
+        </div>
+        <br /><br />
+
+        <div>
+            Favorite Outdoor Game:
+            <input type="checkbox" name="vehicle" value="Bike" /> Cricket
+            <input type="checkbox" name="vehicle" value="Car" checked="checked" /> Football
+        </div><br /><br />
+
+        Image: <input type="image" src="download.png" /><br /><br />
+
+        Browse File:<input type="file" name="file" /><br /><br />
+
+        <h3>1.) Choose one items</h3>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="singapore" selected="selected">Singapore</option>
+            <option value="england">England</option>
+            <option value="france">France</option>
+        </select>
+        <br />
+
+        <h3>2.) Choose multiple items</h3>
+        <select name="country" size="5" multiple="multiple">
+            <option value="india">India</option>
+            <option value="singapore" selected="selected">Singapore</option>
+            <option value="england" selected="selected">England</option>
+            <option value="france">France</option>
+        </select>
+
+        <br /><br/>
+
+        <input type="button" value="Button" />
+        <input type="reset" value="Reset" disabled="disabled" />
+        <input type="submit" name="submit" />
+    </form>
+</body>
+</html>

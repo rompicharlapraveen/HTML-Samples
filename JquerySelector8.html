@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <title>jQuery attribute Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+           // $("[class]").css('color', 'red');
+           // $("p[class='param']").css('color', 'red');
+           // $("p[class!='param']").css('color', 'red');
+          //  $("p[class^='par']").css('color', 'red');
+          //  $("p[class$='ab']").css('color', 'red');
+          //  $("p[class|='param']").css('color', 'red');
+          //  $("p[class!='heading']").css('color', 'red');
+            $("p[class*='heading']").css('color', 'red');
+        });
+    </script>
+</head>
+<body>
+    <h1>Article heading</h1>
+    <p>first paragraph</p>
+    <p class="param">second paragraph</p>
+    <p class="param">third paragraph</p>
+    <p class="ab">fourth paragraph</p>
+    <p class="heading">fifth paragraph</p>
+</body>
+</html>

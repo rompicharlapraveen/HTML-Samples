@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+    <title>jQuery :last-child Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$("p:first-child").css('color', 'red');
+            //$("p:last-child").css('color', 'red');
+            //$("p:first-of-type").css('color', 'red');
+            // $("p:last-of-type").css('color', 'red');
+            // $("p:nth-child(2)").css('color','red');
+            // $("p:nth-last-child(2)").css('color', 'red');
+            //  $("p:nth-of-type(2)").css('color','red');
+            //  $("p:nth-last-of-type(2)").css('color', 'red');
+            //  $("p:only-child").css('color', 'red'); // It prints only first para
+            //  $("p:only-of-type").css('color', 'red');
+            // $("div p").css('color', 'red');
+            // $("div > p").css('color', 'red');
+            // $("div + p").css('color', 'red');
+            // $("div ~ p").css('color', 'red');
+            // $("p:contains('Paragraph')").css('color', 'red');
+            //  $("p:has('span')").css('color', 'red');
+            //  $(":header").css("background-color", "pink");
+            // $(":root").css('background-color', 'grey');
+            // $("p:visible").css('color', 'red');
+              $("p:hidden").slideDown(5000);
+
+        });
+    </script>
+
+    <style>
+        .abc
+        {
+            display: none;
+            color: red;
+        }
+    </style>
+
+</head>
+<body style="text-align:center;">
+    <h1>Article heading</h1>
+
+    <section style="border:1px solid #000;">
+        <p>first paragraph contents...</p>
+        <p>second Paragraph contents..</p>
+        <p>third paragraph contents..</p>
+        <p><span>second paragraph contents</span></p>
+    </section>
+    <br />
+
+    <div style="border:1px solid #000;">
+        <p>first paragraph contents...</p>
+        <p>second Paragraph contents..</p>
+        <p>third Paragraph contents..</p>
+        <h3>Footer Ending</h3>
+    </div>
+    <div><p class="abc">first paragraph contents.. </p></div>
+</body>
+</html>

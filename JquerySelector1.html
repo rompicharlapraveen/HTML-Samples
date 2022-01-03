@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Tag name Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function () {
+           // $("p").css('color', 'red');
+           // $("p , h3").css('color', 'red');
+          //  $("*").css('color', 'red');
+          //  $("#heading").css('color', 'red');
+          //  $(".para").css('color', 'red');
+          //  $(".para1, .para").css('color', 'red');
+          //  $("p:first").css('color', 'red');
+           // $("p:last").css('color', 'red');
+           // $("p:eq(2)").css('color','red');
+           // $("p:gt(2)").css('color', 'red');
+              $("p:lt(3)").css('color', 'red');
+
+        });
+    </script>
+</head>
+<body style="text-align:center;">
+    <div>
+        <h1 id="heading">Article heading</h1>
+        <p class="para1">First paragraph start here...</p>
+        <p class="para">Second paragraph start here...</p>
+        <p>Third paragraph start here...</p>
+        <p>Fourth paragraph start here...</p>
+        <p>Fifth paragraph start here...</p>
+        <p>Sixth paragraph start here...</p>
+    </div>
+
+    <h3>Footer heading</h3>
+</body>
+</html>

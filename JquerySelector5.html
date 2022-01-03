@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery :empty Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+          // $(":empty").css('background-color', 'red');
+            $("td:parent").css('background-color', 'green');
+        });
+    </script>
+</head>
+<body>
+    <h1>Article heading</h1>
+
+    <table border="1" width="300px">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Z</td>
+            <td></td>
+            <td>Y</td>
+        </tr>
+    </table>
+
+</body>
+</html>

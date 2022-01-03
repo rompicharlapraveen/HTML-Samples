@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery :focus Selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("input").click(function ()
+            {
+                $('this').focus();
+                $("input:focus").css('background-color', 'yellow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Article heading</h1>
+    <div>
+        Name <input type="text" name="name" autocomplete="off"/>
+    </div>
+</body>
+</html>

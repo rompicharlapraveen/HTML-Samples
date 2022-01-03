@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery :animated selector</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        function divAnimate()
+        {
+           $("#divanim").slideToggle("300", divAnimate);
+        }
+
+        $(document).ready(function ()
+        {
+            divAnimate();
+
+            $("button").click(function ()
+            {
+                $("div:animated").toggleClass("color");
+            });
+        });
+    </script>
+    <style>
+        div {
+            background: pink;
+            margin: 15px;
+            width: 50px;
+            height: 100px;
+            float: left;
+        }
+
+            div.color {
+                background: black;
+            }
+    </style>
+</head>
+<body style="text-align:center;">
+
+    <div></div>
+    <div id="divanim"></div>
+    <div></div>
+
+    <br />
+    <button>Change</button>
+
+</body>
+</html>
